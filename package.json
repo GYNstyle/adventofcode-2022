@@ -4,12 +4,16 @@
   "description": "adventofcode 2022",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc && node ./dist/index.js",
+    "build-dist": "./node_modules/typescript/bin/tsc",
+    "mocha": "mocha --recursive --reporter spec -r ./dist/test/bootstrap.js",
+    "test": "npm run mocha -- ./dist/test/ -r ./dist/test/integration/bootstrap.js"
   },
   "author": "GYNStyle",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "@types/node": "^18.15.11",
     "eslint": "^8.38.0",
     "prettier": "2.8.7",
     "typescript": "^5.0.4"
