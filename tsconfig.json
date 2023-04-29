@@ -27,6 +27,6 @@
     ],
     "include": [
         "./solutions",
-        "./utils",
+        "./utils", "solutions/index.ts",
     ]
 }

@@ -1,24 +1,24 @@
 {
-  "name": "adventofcode-2022",
-  "version": "1.0.0",
-  "description": "adventofcode 2022",
-  "main": "index.js",
-  "scripts": {
-    "start": "tsc && node ./dist/index.js",
-    "build-dist": "./node_modules/typescript/bin/tsc",
-    "mocha": "mocha --recursive --reporter spec -r ./dist/test/bootstrap.js",
-    "test": "npm run mocha -- ./dist/test/ -r ./dist/test/integration/bootstrap.js"
-  },
-  "author": "GYNStyle",
-  "license": "ISC",
-  "type": "module",
-  "devDependencies": {
-    "@types/node": "^18.15.11",
-    "eslint": "^8.38.0",
-    "prettier": "2.8.7",
-    "typescript": "^5.0.4"
-  },
-  "dependencies": {
-    "dotenv": "^16.0.3"
-  }
+    "name": "adventofcode-2022",
+    "version": "1.0.0",
+    "description": "adventofcode 2022",
+    "main": "index.js",
+    "scripts": {
+        "start": "tsc && node ./dist/solutions/index.js",
+        "build-dist": "./node_modules/typescript/bin/tsc",
+        "mocha": "mocha --recursive --reporter spec -r ./dist/test/bootstrap.js",
+        "test": "npm run mocha -- ./dist/test/ -r ./dist/test/integration/bootstrap.js"
+    },
+    "author": "GYNStyle",
+    "license": "ISC",
+    "type": "module",
+    "devDependencies": {
+        "@types/node": "^18.15.11",
+        "eslint": "^8.38.0",
+        "prettier": "2.8.7",
+        "typescript": "^5.0.4"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3"
+    }
 }
