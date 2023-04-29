@@ -23,7 +23,7 @@ const rucksack = async () => {
     let lineThree: Set<string> = new Set()
     for await (const line of rl) {
         const len = line.length;
-        const first = new Set(line.substring(0, len / 2));
+        const first: Set<string> = new Set(line.substring(0, len / 2));
         const second = new Set(line.substring(len / 2));
         first.forEach((i) => {
             if (second.has(i)) {
