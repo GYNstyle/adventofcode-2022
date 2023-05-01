@@ -22,12 +22,17 @@ const solutions = async () => {
                 .map((item) => Number(item));
             from -= 1;
             to -= 1;
-            for (let i = 0; i < count; i++) {
-                if (arr[from]) {
-                    arr[to] = arr[from][0] + arr[to];
-                    arr[from] = arr[from].substring(1);
-                }
-            }
+            // solution one
+            // for (let i = 0; i < count; i++) {
+            //     if (arr[from]) {
+            //         arr[to] = arr[from][0] + arr[to];
+            //         arr[from] = arr[from].substring(1);
+            //     }
+            // }
+            // solution two
+            const str = arr[from].substring(0, count);
+            arr[to] = str + arr[to];
+            arr[from] = arr[from].substring(count);
         }
     }
     const result = arr
